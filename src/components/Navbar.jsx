@@ -20,11 +20,10 @@ const Navbar = () => {
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div>
         <img
-          src={""}
+          src={Logo}
           alt="Logo Image"
           style={{
-            width: "200px",
-            backgroundColor: "rgba(255, 255, 255, 0.5);",
+            width: "80px",
           }}
         />
       </div>
@@ -108,7 +107,8 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://www.linkedin.com/in/chetan-nooli-295ba6219?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BQc4FbcHhTdSUqEhzDsDfJw%3D%3D"
+              target="_blank"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -116,7 +116,8 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://github.com/chetankumar007"
+              target="_blank"
             >
               Github <FaGithub size={30} />
             </a>
@@ -132,7 +133,8 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://drive.google.com/drive/folders/1e3Sho5EiSht_bqWKpGX6V5ChT9A9Pi87?usp=sharing"
+              target="_blank"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>

@@ -16,7 +16,7 @@ export const data = [
     name: "Netflix Clone",
     image: netflix,
     github: "",
-    live: "",
+    live: "https://clone-netflix-learning.netlify.app/",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const data = [
     name: "Todo App",
     image: todo,
     github: "",
-    live: "",
+    live: "https://todo-online-app.netlify.app/",
   },
   {
     id: 5,
