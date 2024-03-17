@@ -1,7 +1,8 @@
 import amazon from "../assets/projects/amazon_logo.png";
 import netflix from "../assets/projects/netflix.png";
-import todo from "../assets/projects/todo.png";
+import travel from "../assets/projects/travel.png";
 import blog from "../assets/projects/blog.png";
+import weather from "../assets/projects/Weather.jpg";
 
 export const data = [
   {
@@ -16,7 +17,7 @@ export const data = [
     name: "Netflix Clone",
     image: netflix,
     github: "",
-    live: "https://clone-netflix-learning.netlify.app/",
+    live: "https://netflixui-learning.netlify.app/",
   },
   {
     id: 3,
@@ -27,16 +28,16 @@ export const data = [
   },
   {
     id: 4,
-    name: "Todo App",
-    image: todo,
+    name: "TravelApp",
+    image: travel,
     github: "",
-    live: "https://todo-online-app.netlify.app/",
+    live: "https://traveling-app-ui.netlify.app/",
   },
   {
     id: 5,
     name: "Weather App",
-    image: todo,
+    image: weather,
     github: "https://github.com/chetankumar007/Weather-app",
-    live: "",
+    live: "https://weatherapp-openweather-api.netlify.app/",
   },
 ];
