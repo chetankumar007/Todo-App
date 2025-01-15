@@ -17,7 +17,7 @@ export const data = [
     name: "Netflix Clone",
     image: netflix,
     github: "",
-    live: "https://netflixui-learning.netlify.app/",
+    live: "https://netflix-clone-ui-psi.vercel.app/",
   },
   {
     id: 3,
