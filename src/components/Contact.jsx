@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion"; // Import motion here
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -40,7 +40,6 @@ const Contact = () => {
       setIsSubmitted(true);
       setFormState({ name: "", email: "", message: "" });
 
-      // Reset form after 3 seconds
       setTimeout(() => {
         setIsSubmitted(false);
       }, 3000);
@@ -73,17 +72,17 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full min-h-screen bg-gradient-to-b from-[#0a192f] to-[#0c1f3d] flex justify-center items-center p-4"
+      className="w-full min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 flex justify-center items-center p-4"
     >
       <motion.div
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="max-w-[600px] w-full bg-[#112240] p-8 rounded-lg shadow-lg"
+        className="max-w-4xl w-full bg-gray-800 p-8 rounded-lg shadow-xl"
       >
         <motion.h2
           variants={itemVariants}
-          className="text-4xl font-bold mb-4 text-gray-300 border-b-4 border-pink-600 inline-block pb-2"
+          className="text-4xl font-bold mb-4 text-gray-100 border-b-4 border-blue-500 inline-block pb-2"
         >
           Contact
         </motion.h2>
@@ -97,7 +96,7 @@ const Contact = () => {
         >
           <motion.div variants={itemVariants}>
             <input
-              className="w-full bg-[#1d3557] text-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-600 transition duration-300"
+              className="w-full bg-gray-700 text-gray-100 p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
               type="text"
               placeholder="Name"
               name="name"
@@ -108,7 +107,7 @@ const Contact = () => {
           </motion.div>
           <motion.div variants={itemVariants}>
             <input
-              className="w-full bg-[#1d3557] text-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-600 transition duration-300"
+              className="w-full bg-gray-700 text-gray-100 p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
               type="email"
               placeholder="Email"
               name="email"
@@ -119,7 +118,7 @@ const Contact = () => {
           </motion.div>
           <motion.div variants={itemVariants}>
             <textarea
-              className="w-full bg-[#1d3557] text-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-600 transition duration-300 resize-none"
+              className="w-full bg-gray-700 text-gray-100 p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 resize-none"
               name="message"
               rows="6"
               placeholder="Message"
@@ -128,11 +127,11 @@ const Contact = () => {
               required
             ></textarea>
           </motion.div>
-          <motion.div variants={itemVariants}>
+          <motion.div variants={itemVariants} className="flex justify-center">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="w-full bg-pink-600 text-white py-3 rounded-md hover:bg-pink-700 transition duration-300 flex items-center justify-center"
+              className="w-48 bg-blue-600 text-white py-4 rounded-md hover:bg-blue-700 transition duration-300 flex items-center justify-center text-lg font-semibold"
               type="submit"
               disabled={isSubmitting || isSubmitted}
             >
